@@ -10,7 +10,7 @@
 
 以上是关于异步的概念的解释，接下来我们通俗地解释一下异步：异步就是从主线程发射一个子线程来完成任务。
 
-![img](https://cdn.u1n1.com/img/picgoasync-sync.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgoasync-sync.png)
 
 ### 什么时候用异步编程
 

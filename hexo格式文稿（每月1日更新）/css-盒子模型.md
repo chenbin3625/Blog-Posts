@@ -1,0 +1,210 @@
+title: css-盒子模型
+author: chenbin
+tags:
+  - css
+categories:
+  - css
+date: 2022-04-11 21:26:00
+---
+# 盒子模型
+
+## [块级盒子（Block box） 和 内联盒子（Inline box）](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#块级盒子（block_box）_和_内联盒子（inline_box）)
+
+在 CSS 中我们广泛地使用两种“盒子” —— **块级****盒子** (**block box**) 和 **内联盒子** (**inline box**)**。**这两种盒子会在**页面流**（page flow）和**元素之间的关系**方面表现出不同的行为:
+
+一个被定义成块级的（block）盒子会表现出以下行为:
+
+- 盒子会在内联的方向上扩展并占据父容器在该方向上的所有可用空间，在绝大数情况下意味着盒子会和父容器一样宽
+- 每个盒子都会换行
+- [`width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width) 和 [`height`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/height) 属性可以发挥作用
+- 内边距（padding）, 外边距（margin） 和 边框（border） 会将其他元素从当前盒子周围“推开”
+
+除非特殊指定，诸如标题(`<h1>`等)和段落(`<p>`)默认情况下都是块级的盒子。
+
+如果一个盒子对外显示为 `inline`，那么他的行为如下:
+
+- 盒子不会产生换行。
+-  [`width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width) 和 [`height`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/height) 属性将不起作用。
+- 垂直方向的内边距、外边距以及边框会被应用但是不会把其他处于 `inline` 状态的盒子推开。
+- 水平方向的内边距、外边距以及边框会被应用且会把其他处于 `inline` 状态的盒子推开。
+
+用做链接的 `<a>` 元素、 `<span>`、 `<em>` 以及 `<strong>` 都是默认处于 `inline` 状态的。
+
+我们通过对盒子[`display`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/display) 属性的设置，比如 `inline` 或者 `block` ，来控制盒子的外部显示类型。
+
+## [补充: 内部和外部显示类型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#补充_内部和外部显示类型)
+
+在这里最好也解释下**内部** 和 **外部** 显示类型。如上所述， css的box模型有一个外部显示类型，来决定盒子是块级还是内联。
+
+同样盒模型还有内部显示类型，它决定了盒子内部元素是如何布局的。默认情况下是按照 **[正常文档流](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)** 布局，也意味着它们和其他块元素以及内联元素一样(如上所述).
+
+但是，我们可以通过使用类似 `flex` 的 `display` 属性值来更改内部显示类型。 如果设置 `display: flex`，在一个元素上，外部显示类型是 `block`，但是内部显示类型修改为 `flex`。 该盒子的所有直接子元素都会成为flex元素，会根据 [弹性盒子（Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) [）](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)规则进行布局，稍后您将了解这些规则。
+
+### [盒模型的各个部分](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#盒模型的各个部分)
+
+ CSS中组成一个块级盒子需要:
+
+- **Content box**: 这个区域是用来显示内容，大小可以通过设置 [`width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width) 和 [`height`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/height).
+- **Padding box**: 包围在内容区域外部的空白区域； 大小通过 [`padding`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding) 相关属性设置。
+- **Border box**: 边框盒包裹内容和内边距。大小通过 [`border`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border) 相关属性设置。
+- **Margin box**: 这是最外面的区域，是盒子和其他元素之间的空白区域。大小通过 [`margin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin) 相关属性设置。
+
+如下图：
+
+![Diagram of the box model](https://ypyun-cdn.u1n1.com//img/picgo202204111726956.png)
+
+### [标准盒模型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#标准盒模型)
+
+在标准模型中，如果你给盒设置 `width` 和 `height`，实际设置的是 *content box*。 padding 和 border 再加上设置的宽高一起决定整个盒子的大小。 见下图。
+
+假设定义了 `width`, `height`, `margin`, `border`, and `padding`:
+
+```
+.box {
+  width: 350px;
+  height: 150px;
+  margin: 25px;
+  padding: 25px;
+  border: 5px solid black;
+}
+```
+
+ 
+
+如果使用标准模型宽度 = 410px (350 + 25 + 25 + 5 + 5)，高度 = 210px (150 + 25 + 25 + 5 + 5)，padding 加 border 再加 content box。
+
+![Showing the size of the box when the standard box model is being used.](https://ypyun-cdn.u1n1.com//img/picgo202204111730101.png)
+
+**注**: margin 不计入实际大小 —— 当然，它会影响盒子在页面所占空间，但是影响的是盒子外部空间。盒子的范围到边框为止 —— 不会延伸到margin。
+
+### [替代（IE）盒模型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#替代（ie）盒模型)
+
+你可能会认为盒子的大小还要加上边框和内边距，这样很麻烦，而且你的想法是对的! 因为这个原因，css还有一个替代盒模型。使用这个模型，所有宽度都是可见宽度，所以内容宽度是该宽度减去边框和填充部分。使用上面相同的样式得到 (width = 350px, height = 150px).
+
+![Showing the size of the box when the alternate box model is being used.](https://ypyun-cdn.u1n1.com//img/picgo202204111733637.png)
+
+默认浏览器会使用标准模型。如果需要使用替代模型，您可以通过为其设置 `box-sizing: border-box` 来实现。 这样就可以告诉浏览器使用 `border-box` 来定义区域，从而设定您想要的大小。
+
+```
+.box {
+  box-sizing: border-box;
+} 
+```
+
+ 
+
+如果你希望所有元素都使用替代模式，而且确实很常用，设置 `box-sizing` 在 `<html>` 元素上，然后设置所有元素继承该属性，正如下面的例子。如果想要深入理解，请看 [the CSS Tricks article on box-sizing](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)。
+
+```
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+```
+
+ [使用调试工具来查看盒模型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#使用调试工具来查看盒模型)
+
+您的 [浏览器开发者工具](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) 可以使您更容易地理解box模型。如果您在Firefox的DevTools中查看一个元素，您可以看到元素的大小以及它的外边距、内边距和边框。这是一个很好的检查元素大小的方式，可以便捷的判断您的盒子大小是否符合预期 !
+
+![Inspecting the box model of an element using Firefox DevTools](https://ypyun-cdn.u1n1.com/img/picgo202204111744401.png)
+
+## [外边距，内边距，边框](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#外边距，内边距，边框)
+
+您已经在上面的示例中看到了[`margin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin)、[`padding`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding)和[`border`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border)属性。该示例中使用的是属性的**简写**，允许我们一次设置盒子的四个边。这些简写等价于分别控制盒子的不同边的普通写法。
+
+接下来，我们更详细地研究这些属性：
+
+### [外边距](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#外边距)
+
+外边距是盒子周围一圈看不到的空间。它会把其他元素从盒子旁边推开。 外边距属性值可以为正也可以为负。设置负值会导致和其他内容重叠。无论使用标准模型还是替代模型，外边距总是在计算可见部分后额外添加。
+
+我们可以使用[`margin`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin)属性一次控制一个元素的所有边距，或者每边单独使用等价的普通属性控制：
+
+- [`margin-top`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin-top)
+- [`margin-right`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin-right)
+- [`margin-bottom`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin-bottom)
+- [`margin-left`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin-left)
+
+#### **外边距折叠**
+
+理解外边距的一个关键是外边距折叠的概念。如果你有两个外边距相接的元素，这些外边距将合并为一个外边距，即最大的单个外边距的大小。
+
+在下面的例子中，我们有两个段落。顶部段落的页 `margin-bottom`为50px。第二段的`margin-top` 为30px。因为外边距折叠的概念，所以框之间的实际外边距是50px，而不是两个外边距的总和。
+
+### [边框](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#边框)
+
+边框是在边距和填充框之间绘制的。如果您正在使用标准的盒模型，边框的大小将添加到框的宽度和高度。如果您使用的是替代盒模型，那么边框的大小会使内容框更小，因为它会占用一些可用的宽度和高度。
+
+为边框设置样式时，有大量的属性可以使用——有四个边框，每个边框都有样式、宽度和颜色，我们可能需要对它们进行操作。
+
+可以使用[`border`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border)属性一次设置所有四个边框的宽度、颜色和样式。
+
+分别设置每边的宽度、颜色和样式，可以使用：
+
+- [`border-top`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-top)
+- [`border-right`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-right)
+- [`border-bottom`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-bottom)
+- [`border-left`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-left)
+
+设置所有边的颜色、样式或宽度，请使用以下属性：
+
+- [`border-width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-width)
+- [`border-style`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-style)
+- [`border-color`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-color)
+
+设置单边的颜色、样式或宽度，可以使用最细粒度的普通属性之一：
+
+- [`border-top-width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-top-width)
+- [`border-top-style`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-top-style)
+- [`border-top-color`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-top-color)
+- [`border-right-width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-right-width)
+- [`border-right-style`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-right-style)
+- [`border-right-color`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-right-color)
+- [`border-bottom-width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-bottom-width)
+- [`border-bottom-style`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-bottom-style)
+- [`border-bottom-color`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-bottom-color)
+- [`border-left-width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-left-width)
+- [`border-left-style`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-left-style)
+- [`border-left-color`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-left-color)
+
+### [内边距](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#内边距)
+
+内边距位于边框和内容区域之间。与外边距不同，您不能有负数量的内边距，所以值必须是0或正的值。应用于元素的任何背景都将显示在内边距后面，内边距通常用于将内容推离边框。
+
+
+我们可以使用[`padding`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding)简写属性控制元素所有边，或者每边单独使用等价的普通属性：
+
+- [`padding-top`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding-top)
+- [`padding-right`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding-right)
+- [`padding-bottom`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding-bottom)
+- [`padding-left`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding-left)
+
+**如果在下面的示例中更改类`.box`的内边距值，您可以看到，这将更改文本开始的位置。**
+
+
+
+**您还可以更改类`.container`的内边距，这将在容器和方框之间留出空间。任何元素上的内边距都可以更改，并在其边界和元素内部的任何内容之间留出空间。**
+
+## [盒子模型和内联盒子](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#盒子模型和内联盒子)
+
+以上所有的方法都完全适用于块级盒子。有些属性也可以应用于内联盒子，例如由`<span>`元素创建的那些内联盒子。
+
+
+
+
+## [使用display: inline-block](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#使用display_inline-block)
+
+display有一个特殊的值，它在内联和块之间提供了一个中间状态。这对于以下情况非常有用:您不希望一个项切换到新行，但希望它可以设定宽度和高度，并避免上面看到的重叠。
+
+一个元素使用 `display: inline-block`，实现我们需要的块级的部分效果：
+
+- 设置`width` 和`height` 属性会生效。
+- `padding`, `margin`, 以及`border` 会推开其他元素。
+
+但是，它不会跳转到新行，如果显式添加`width` 和`height` 属性，它只会变得比其内容更大。
+
+当您想要通过添加内边距使链接具有更大的命中区域时，这是很有用的。`<a>`是像`<span`>一样的内联元素；你可以使用`display: inline-block`来设置内边距，让用户更容易点击链接。
+
+这种情况在导航栏中很常见。下面的导航使用flexbox显示在一行中，我们为`<a>`元素添加了内边距，因为我们希望能够在`<a>`在鼠标移动到上面时改变背景色。内边距似乎覆盖了`<ul>`元素上的边框。这是因为`<a>`是一个内联元素。

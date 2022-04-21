@@ -20,7 +20,7 @@ Stylesheets **cascade（样式表层叠）** — 简单的说，css规则的顺�
 
 下面的例子中，我们有两个关于 `h1` 的规则。`h1` 最后显示蓝色 — 这些规则有相同的优先级，所以顺序在最后的生效。
 
-![image-20220411113421734](https://cdn.u1n1.com//img/picgo202204111134759.png)
+![image-20220411113421734](https://ypyun-cdn.u1n1.com//img/picgo202204111134759.png)
 
 
 
@@ -32,7 +32,7 @@ Stylesheets **cascade（样式表层叠）** — 简单的说，css规则的顺�
 
 - 一个类选择器稍微具体点 — 它会选择该页面中有特定 `class` 属性值的元素 — 所以它的优先级就要高一点。
 
-- ![image-20220411113528427](https://cdn.u1n1.com//img/picgo202204111135454.png)
+- ![image-20220411113528427](https://ypyun-cdn.u1n1.com//img/picgo202204111135454.png)
 
   ### [继承](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#继承)
 
@@ -40,7 +40,7 @@ Stylesheets **cascade（样式表层叠）** — 简单的说，css规则的顺�
 
   举一个例子，如果你设置一个元素的 `color` 和 `font-family` ，每个在里面的元素也都会有相同的属性，除非你直接在元素上设置属性。
 
-  ![image-20220411113644037](https://cdn.u1n1.com//img/picgo202204111136064.png)
+  ![image-20220411113644037](https://ypyun-cdn.u1n1.com//img/picgo202204111136064.png)
 
   一些属性是不能继承的 — 举个例子如果你在一个元素上设置 [`width`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width) 50% ，所有的后代不会是父元素的宽度的50% 。如果这个也可以继承的话，CSS就会很难使用了!
 
@@ -52,7 +52,7 @@ Stylesheets **cascade（样式表层叠）** — 简单的说，css规则的顺�
 
 **color** 应用在直接子元素，也影响其他后代 — 直接子元素`<li>`，和第一个嵌套列表中的子项。然后添加了一个 `special` 类到第二个嵌套列表，其中使用了不同的颜色。然后通过它的子元素继承。
 
-![image-20220411113957559](https://cdn.u1n1.com//img/picgo202204111139587.png)
+![image-20220411113957559](https://ypyun-cdn.u1n1.com//img/picgo202204111139587.png)
 
 像 widths (上面提到的), margins, padding, 和 borders 不会被继承。如果borders可以被继承，每个列表和列表项都会获得一个边框 — 可能就不是我们想要的结果!
 
@@ -74,7 +74,7 @@ CSS 为控制继承提供了四个特殊的通用属性值。每个css属性都�
 
   将属性重置为自然值，也就是如果属性是自然继承那么就是 `inherit`，否则和 `initial`一样
 
-![image-20220411114531365](https://cdn.u1n1.com//img/picgo202204111145393.png)
+![image-20220411114531365](https://ypyun-cdn.u1n1.com//img/picgo202204111145393.png)
 
 
 
@@ -114,7 +114,7 @@ CSS 的 shorthand 属性 `all` 可以用于同时将这些继承值中的一个�
 
 现在让我们来看看浏览器如何计算优先级。我们已经知道一个元素选择器比类选择器的优先级更低会被其覆盖。本质上，不同类型的选择器有不同的分数值，把这些分数相加就得到特定选择器的权重，然后就可以进行匹配。
 
-![image-20220411115318350](https://cdn.u1n1.com//img/picgo202204111153379.png)
+![image-20220411115318350](https://ypyun-cdn.u1n1.com//img/picgo202204111153379.png)
 
 
 
@@ -124,7 +124,7 @@ CSS 的 shorthand 属性 `all` 可以用于同时将这些继承值中的一个�
 
 如果你有多个使用相同样式的CSS选择器，那么这些单独的选择器可以被混编为一个“选择器列表”，这样，规则就可以应用到所有的单个选择器上了。例如，如果我的`h1`和`.special`类有相同的CSS，那么我可以把它们写成两个分开的规则。
 
-![image-20220411121909759](https://cdn.u1n1.com//img/picgo202204111219785.png)
+![image-20220411121909759](https://ypyun-cdn.u1n1.com//img/picgo202204111219785.png)
 
 当你使用选择器列表时，如果任何一个选择器无效 (存在语法错误)，那么整条规则都会被忽略。
 

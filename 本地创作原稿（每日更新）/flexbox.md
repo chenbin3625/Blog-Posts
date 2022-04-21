@@ -28,7 +28,7 @@ section {
 
 当元素表现为 flex 框时，它们沿着两个轴来布局：
 
-![flex_terms.png](https://cdn.u1n1.com/img/picgo202204120136829.png)
+![flex_terms.png](https://ypyun-cdn.u1n1.com/img/picgo202204120136829.png)
 
 - **主轴（main axis）**是沿着 flex 元素放置的方向延伸的轴（比如页面上的横向的行、纵向的列）。该轴的开始和结束被称为 **main start** 和 **main end**。
 - **交叉轴（cross axis）**是垂直于 flex 元素放置方向的轴。该轴的开始和结束被称为 **cross start** 和 **cross end**。
@@ -53,7 +53,7 @@ flex-direction: column;
 
 当你在布局中使用定宽或者定高的时候，可能会出现问题即处于容器中的 弹性盒子子元素会溢出，破坏了布局。你可以看一下 [弹性盒子-wrap0.html](https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flexbox-wrap0.html) 示例（你也可以拷贝到本地），如下所示：
 
-![img](https://cdn.u1n1.com/img/picgoflexbox-example3.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgoflexbox-example3.png)
 
 在这里我们看到，子代确实超出了它们的容器。 解决此问题的一种方法是将以下声明添加到 section css 规则中：
 
@@ -73,7 +73,7 @@ flex: 200px;
 
 现在尝试一下吧；你会看到布局比原来好多了：
 
-![img](https://cdn.u1n1.com/img/picgoflexbox-example4.png)现在我们有了多行 弹性盒子— 任何溢出的元素将被移到下一行。在 article 元素上设置的 flex: 200px 规则，意味着每个元素的宽度至少是200px；我们将在后面更详细地讨论这个属性。你可能还注意到，最后一行上的最后几个项每个都变得更宽，以便把整个行填满。
+![img](https://ypyun-cdn.u1n1.com/img/picgoflexbox-example4.png)现在我们有了多行 弹性盒子— 任何溢出的元素将被移到下一行。在 article 元素上设置的 flex: 200px 规则，意味着每个元素的宽度至少是200px；我们将在后面更详细地讨论这个属性。你可能还注意到，最后一行上的最后几个项每个都变得更宽，以便把整个行填满。
 
 但是这里我们可以做得更多。首先，改变 [`flex-direction`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-direction) 属性值为 `row-reverse` — 你会看到仍然有多行布局，但是每一行元素排列的方向和原来是相反的了。
 
@@ -140,7 +140,7 @@ article:nth-of-type(3) {
 
 这表示“每个flex 项将首先给出200px的可用空间，然后，剩余的可用空间将根据分配的比例共享“。 尝试刷新，你会看到分配空间的差别。
 
-![img](https://cdn.u1n1.com/img/picgoflexbox-example1.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgoflexbox-example1.png)
 
 弹性盒子的真正价值可以体现在它的灵活性/响应性，如果你调整浏览器窗口的大小，或者增加一个 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article) 元素，这时的布局仍旧是好的。
 
@@ -158,7 +158,7 @@ article:nth-of-type(3) {
 
 还可以使用 弹性盒子的功能让 flex 项沿主轴或交叉轴对齐。让我们一起看一下新例子 — [flex-align0.html](https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flex-align0.html)（[在线浏览](https://mdn.github.io/learning-area/css/css-layout/flexbox/flex-align0.html)）— 我们将会有一个整洁，灵活的按钮/工具栏。 此时，你看到了一个水平菜单栏，其中一些按钮卡在左上角，就像下面这样：
 
-![img](https://cdn.u1n1.com/img/picgoflexbox-example5.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgoflexbox-example5.png)
 
 然后，将下面的 CSS 添加到例子的底部：
 
@@ -235,7 +235,7 @@ button:last-child {
 
 弹性盒子也能创建一些颇为复杂的布局。设置一个元素为flex项目，那么他同样成为一个 flex 容器，它的孩子(直接子节点)也表现为 flexible box 。看一下 [complex-弹性盒子.html](https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/complex-flexbox.html)（[在线浏览](https://mdn.github.io/learning-area/css/css-layout/flexbox/complex-flexbox.html)）。
 
-![img](https://cdn.u1n1.com/img/picgoflexbox-example7.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgoflexbox-example7.png)
 
 这个例子的 HTML 是相当简单的。我们用一个 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/section) 元素包含了三个 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article)元素。第三个 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/article) 元素包含了三个 [``](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/div)：
 

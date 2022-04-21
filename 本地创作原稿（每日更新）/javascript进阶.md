@@ -126,7 +126,7 @@ Copy to Clipboard
 - 浏览器检查实际点击的元素是否在冒泡阶段中注册了一个`onclick`事件处理程序，如果是，则运行它
 - 然后它移动到下一个直接的祖先元素，并做同样的事情，然后是下一个，等等，直到它到达`<html>`元素。
 
-[![img](https://cdn.u1n1.com/img/picgobubbling-capturing.png)](https://mdn.mozillademos.org/files/14075/bubbling-capturing.png)
+[![img](https://ypyun-cdn.u1n1.com/img/picgobubbling-capturing.png)](https://mdn.mozillademos.org/files/14075/bubbling-capturing.png)
 
 
 在现代浏览器中，默认情况下，所有事件处理程序都在冒泡阶段进行注册。因此，在我们当前的示例中，当您单击视频时，这个单击事件从 `<video>`元素向外冒泡直到`<html>`元素。沿着这个事件冒泡线路：

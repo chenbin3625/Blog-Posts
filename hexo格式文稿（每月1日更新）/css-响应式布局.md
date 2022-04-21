@@ -1,3 +1,11 @@
+title: css-响应式布局
+author: chenbin
+tags:
+  - css
+categories:
+  - css
+date: 2022-04-12 11:06:00
+---
 # 响应式布局
 
 
@@ -11,13 +19,13 @@
 
 这两种途径会倾向于导致它的表现只有在设计者的屏幕上才是最佳的！液态站点导致了小屏幕上的设计会挤成一团（如下所示），以及大屏幕上难以阅读的很长的行长度。
 
-![A layout with two columns squashed into a mobile size viewport.](https://cdn.u1n1.com/img/picgomdn-rwd-liquid.png)
+![A layout with two columns squashed into a mobile size viewport.](https://ypyun-cdn.u1n1.com/img/picgomdn-rwd-liquid.png)
 
 **备注：**看一下这个简单的流式布局：[示例](https://mdn.github.io/css-examples/learn/rwd/liquid-width.html)，[源代码](https://github.com/mdn/css-examples/blob/master/learn/rwd/liquid-width.html)。当查看示例时，来回拖拽你的浏览器窗口，改变其大小，看下不同尺寸下的显示情况。
 
 固定宽度站点的一个可能的后果是，在比站点更窄的屏幕上会出现一个水平滚动条（如下所示），在大屏幕上的设计边缘还会有许多空白。
 
-![A layout with a horizontal scrollbar in a mobile viewport.](https://cdn.u1n1.com/img/picgomdn-rwd-fixed.png)
+![A layout with a horizontal scrollbar in a mobile viewport.](https://ypyun-cdn.u1n1.com/img/picgomdn-rwd-fixed.png)
 
 **备注：**看下这个简单的固定宽度布局：[示例](https://mdn.github.io/css-examples/learn/rwd/fixed-width.html)，[源代码](https://github.com/mdn/css-examples/blob/master/learn/rwd/fixed-width.html)，重新观察一下你调整浏览器窗口大小后的结果。
 
@@ -93,11 +101,11 @@ Copy to Clipboard
 
 下面的例子阐释了一个使用媒体查询和灵活网格的简单响应式设计。在窄屏幕上，布局将盒子堆叠在另一个的上面：
 
-![A mobile view of the layout with boxes stacked on top of each other vertically.](https://cdn.u1n1.com/img/picgomdn-rwd-mobile.png)
+![A mobile view of the layout with boxes stacked on top of each other vertically.](https://ypyun-cdn.u1n1.com/img/picgomdn-rwd-mobile.png)
 
 在宽些的屏幕上，它们变成了两列：
 
-![A desktop view of a layout with two columns.](https://cdn.u1n1.com/img/picgomdn-rwd-desktop.png)
+![A desktop view of a layout with two columns.](https://ypyun-cdn.u1n1.com/img/picgomdn-rwd-desktop.png)
 
 **备注：**你可以在GitHub上找到此示例的[实时示例](https://mdn.github.io/css-examples/learn/rwd/float-based-rwd.html)和[源代码](https://github.com/mdn/css-examples/blob/master/learn/rwd/float-based-rwd.html)。
 
@@ -210,11 +218,11 @@ Copy to Clipboard
 
 移动端，标题变小了：
 
-![A stacked layout with a small heading size.](https://cdn.u1n1.com/img/picgomdn-rwd-font-mobile.png)
+![A stacked layout with a small heading size.](https://ypyun-cdn.u1n1.com/img/picgomdn-rwd-font-mobile.png)
 
 但在桌面端，我们看到了大点的标题：
 
-![A two column layout with a large heading.](https://cdn.u1n1.com/img/picgomdn-rwd-font-desktop.png)
+![A two column layout with a large heading.](https://ypyun-cdn.u1n1.com/img/picgomdn-rwd-font-desktop.png)
 
 **备注：** 查看这个编排好的示例：[示例](https://mdn.github.io/css-examples/learn/rwd/type-rwd.html)，[源代码](https://github.com/mdn/css-examples/blob/master/learn/rwd/type-rwd.html)。
 

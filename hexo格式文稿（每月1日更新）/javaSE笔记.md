@@ -1,3 +1,10 @@
+title: 博仁的javaSE笔记
+author: chenbin
+tags:
+  - java
+categories: []
+date: 2022-04-16 20:54:00
+---
 # JavaSE
 
 ## Java概述
@@ -26,7 +33,7 @@ Java之所以被开发，是要达到以下五个目的：
 
 [面向对象的三大基本特征和五大基本原则](https://segmentfault.com/a/1190000021898422)
 
-![Java语言特点](https://cdn.u1n1.com/img/picgo202204162048649.png)
+![Java语言特点](https://ypyun-cdn.u1n1.com/img/picgo202204162048649.png)
 
 #### 1. [面向对象](https://so.csdn.net/so/search?q=面向对象&spm=1001.2101.3001.7020)
 
@@ -36,7 +43,7 @@ Java 是一种面向对象的语言，它对对象中的类、对象、继承、
 
 平台无关性的具体表现在Java 是“一次编写，到处运行“的语言，因此采用 Java 语言编写的程序具有很好的可移植性，而保证这一点的正是 Java 的[虚拟机](https://so.csdn.net/so/search?q=虚拟机&spm=1001.2101.3001.7020)机制。在引入虚拟机之后，Java 语言在不同的平台上运行不需要重新编译。
 
-![image-20211211145530665](https://cdn.u1n1.com/img/picgo202204162048767.png)
+![image-20211211145530665](https://ypyun-cdn.u1n1.com/img/picgo202204162048767.png)
 
 #### 3. 简单性
 
@@ -76,15 +83,15 @@ Java 通常被用在网络环境中，为此，Java 提供了一个安全机制�
 
 JVM是一个虚拟的计算机，具有指令集并使用不同的存储区域。负责执行指令，管理数据 内存 寄存器。
 
-![preview](https://cdn.u1n1.com/img/picgo202204162048250.png)
+![preview](https://ypyun-cdn.u1n1.com/img/picgo202204162048250.png)
 
 **JDK JRE JVM 关系**（重点）
 
-![image-20211212195742515](https://cdn.u1n1.com/img/picgo202204162048291.png)
+![image-20211212195742515](https://ypyun-cdn.u1n1.com/img/picgo202204162048291.png)
 
 ### 编译与解释
 
-![image-20211215170531770](https://cdn.u1n1.com/img/picgo202204162048484.png)
+![image-20211215170531770](https://ypyun-cdn.u1n1.com/img/picgo202204162048484.png)
 
 **在dos窗口运行 如 helloJava.java 的文件**
 
@@ -104,7 +111,7 @@ java helloJava // 这里只需要类名，切记非 java helloJava.class
 - 一个源文件中含有多个类，通过编译会生成对应个数的字节码文件（字节码文件的名字 <==> 类名）
 - 如果一个源文件中的类与类之间**没有存在联系**（如下代码）可以在每一个类中放置程序入口main函数，由于最后生成不同的字节码文件，我们只需要通过java.exe工具将各个字节码放入到JVM虚拟机中进行解释执行（因为不存在同时放入两个字节码，所以不会存在程序入口冲突问题）
 
-![image-20211215173945096](https://cdn.u1n1.com/img/picgo202204162048606.png)
+![image-20211215173945096](https://ypyun-cdn.u1n1.com/img/picgo202204162048606.png)
 
 ```java
 class java{
@@ -183,7 +190,7 @@ public static void main(String[] args){
 
 注释内容可以被JDK提供的工具javadoc所解析，生成一套以网页文件形式体现的该程序的说明文档
 
-![image-20211216211455670](https://cdn.u1n1.com/img/picgo202204162048607.png)
+![image-20211216211455670](https://ypyun-cdn.u1n1.com/img/picgo202204162048607.png)
 
 ```java
 /**
@@ -215,11 +222,11 @@ public class hello{
 
 1. 未加入注解说明
 
-   ![image-20211216211217065](https://cdn.u1n1.com/img/picgo202204162048610.png)
+   ![image-20211216211217065](https://ypyun-cdn.u1n1.com/img/picgo202204162048610.png)
 
 2. 加入注解说明
 
-   ![image-20211216211159909](https://cdn.u1n1.com/img/picgo202204162048625.png)
+   ![image-20211216211159909](https://ypyun-cdn.u1n1.com/img/picgo202204162048625.png)
 
 #### **javadoc 标签**（文档注解）
 
@@ -247,13 +254,13 @@ public class hello{
 
 ### Java开发规范（重点）
 
-![image-20211218171739445](https://cdn.u1n1.com/img/picgo202204162048907.png)
+![image-20211218171739445](https://ypyun-cdn.u1n1.com/img/picgo202204162048907.png)
 
 ### DOS命令操作（了解）
 
 - 讲解相对路径 VS 绝对路径（重要!!!）
 
-  ![img](https://cdn.u1n1.com/img/picgo202204162048943.png)
+  ![img](https://ypyun-cdn.u1n1.com/img/picgo202204162048943.png)
 
 - DOS命令(大小写一样效果)
 
@@ -351,7 +358,7 @@ public class hello{
 
 java是一种强制类型语言，每一种数据都定义了明确的数据类型，在内存中分配了不同大小的内存空间（字节）
 
-![image-20211219160638668](https://cdn.u1n1.com/img/picgo202204162048947.png)
+![image-20211219160638668](https://ypyun-cdn.u1n1.com/img/picgo202204162048947.png)
 
 细节：字符串本质是类，属于引用数据类型
 
@@ -465,7 +472,7 @@ E38 指的是 10^38
 
 补充：ASCII实际上可以表示256个字符，但是只使用了128个
 
-![img](https://cdn.u1n1.com/img/picgo202204162048968.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204162048968.png)
 
 #### [布尔类型](https://so.csdn.net/so/search?q=布尔类型&spm=1001.2101.3001.7020)
 
@@ -481,7 +488,7 @@ E38 指的是 10^38
 
 精度小的数据类型自动转换为精度大的数据类型
 
-![image-20220111140545230](https://cdn.u1n1.com/img/picgo202204162048979.png)
+![image-20220111140545230](https://ypyun-cdn.u1n1.com/img/picgo202204162048979.png)
 
 **自动类型转换相关的注意细节**
 
@@ -613,7 +620,7 @@ s1 = (short)(s1+1);
 
 ### 算术运算符
 
-![image-20220111141228314](https://cdn.u1n1.com/img/picgo202204162048981.png)
+![image-20220111141228314](https://ypyun-cdn.u1n1.com/img/picgo202204162048981.png)
 
 **代码讲解*
 
@@ -639,7 +646,7 @@ double d = 10 / 4; // 2.0
 
 关系运算符组成的表达式我们称为关系表达式
 
-![image-20220111141427299](https://cdn.u1n1.com/img/picgo202204162048436.png)
+![image-20220111141427299](https://ypyun-cdn.u1n1.com/img/picgo202204162048436.png)
 
 instanceof 比较操作符，用于判断对象的运行类型是否为某某类型或者是某某类型的子类
 
@@ -647,7 +654,7 @@ instanceof 比较操作符，用于判断对象的运行类型是否为某某类
 
 用于连接多个条件（多个关系表达式），最终的值还是boolean类型
 
-![image-20220111141500121](https://cdn.u1n1.com/img/picgo202204162048441.png)
+![image-20220111141500121](https://ypyun-cdn.u1n1.com/img/picgo202204162048441.png)
 
 && 短路与：如果某一个条件为false,则后面的条件不用判断,结果为false
 
@@ -661,9 +668,9 @@ instanceof 比较操作符，用于判断对象的运行类型是否为某某类
 
 **习题练习**
 
-![image-20220111141608640](https://cdn.u1n1.com/img/picgo202204162048444.png)
+![image-20220111141608640](https://ypyun-cdn.u1n1.com/img/picgo202204162048444.png)
 
-![image-20220111141632732](https://cdn.u1n1.com/img/picgo202204162048454.png)
+![image-20220111141632732](https://ypyun-cdn.u1n1.com/img/picgo202204162048454.png)
 
 ### 赋值运算符
 
@@ -673,7 +680,7 @@ instanceof 比较操作符，用于判断对象的运行类型是否为某某类
 
 **复合赋值运算符： += -+ \*= /= %=**
 
-![image-20220111141720303](https://cdn.u1n1.com/img/picgo202204162048459.png)
+![image-20220111141720303](https://ypyun-cdn.u1n1.com/img/picgo202204162048459.png)
 
 ### 三元运算符
 
@@ -683,7 +690,7 @@ instanceof 比较操作符，用于判断对象的运行类型是否为某某类
 
 **优先级比较**（补充概念：单目运算符：自加加 自减减 取反）
 
-![image-20220111154246649](https://cdn.u1n1.com/img/picgo202204162048465.png)
+![image-20220111154246649](https://ypyun-cdn.u1n1.com/img/picgo202204162048465.png)
 
 ### 标识符的命名规则和规范
 
@@ -697,13 +704,13 @@ instanceof 比较操作符，用于判断对象的运行类型是否为某某类
 
 2. 不可以使用关键字和保留字
 
-   ![image-20220113145556828](https://cdn.u1n1.com/img/picgo202204162048963.png)
+   ![image-20220113145556828](https://ypyun-cdn.u1n1.com/img/picgo202204162048963.png)
 
 3. 区分大小写，长度无限制
 
 #### 标识符的规范
 
-![image-20220111160940752](https://cdn.u1n1.com/img/picgo202204162048975.png)
+![image-20220111160940752](https://ypyun-cdn.u1n1.com/img/picgo202204162048975.png)
 
 ### 进制转换
 
@@ -713,7 +720,7 @@ instanceof 比较操作符，用于判断对象的运行类型是否为某某类
 
 举例：八进制转换成十进制
 
-![image-20220111163533756](https://cdn.u1n1.com/img/picgo202204162048980.png)
+![image-20220111163533756](https://ypyun-cdn.u1n1.com/img/picgo202204162048980.png)
 
 **十进制转换成其他进制**
 
@@ -721,19 +728,19 @@ instanceof 比较操作符，用于判断对象的运行类型是否为某某类
 
 举例： 十进制转换成二进制
 
-![image-20220111163958867](https://cdn.u1n1.com/img/picgo202204162048988.png)
+![image-20220111163958867](https://ypyun-cdn.u1n1.com/img/picgo202204162048988.png)
 
 ### 位运算
 
 #### 原码，反码，补码
 
-![image-20220111214659288](https://cdn.u1n1.com/img/picgo202204162048018.png)
+![image-20220111214659288](https://ypyun-cdn.u1n1.com/img/picgo202204162048018.png)
 
 #### 位运算符
 
 **（&，|，^，~，>>，<<，>>>）**
 
-![image-20220111232609655](https://cdn.u1n1.com/img/picgo202204162048238.png)
+![image-20220111232609655](https://ypyun-cdn.u1n1.com/img/picgo202204162048238.png)
 
 **详解算术左右有移动**
 
@@ -745,7 +752,7 @@ instanceof 比较操作符，用于判断对象的运行类型是否为某某类
 
 负数的补码移位:右移->高位补1 ; 左移->低位补0
 
-![image-20220111232952114](https://cdn.u1n1.com/img/picgo202204162048264.png)
+![image-20220111232952114](https://ypyun-cdn.u1n1.com/img/picgo202204162048264.png)
 
 ```java
 // 运用补码原码知识
@@ -858,7 +865,7 @@ System.out.println(i); // 11
   123456789
   ```
 
-  ![ ](https://cdn.u1n1.com/img/picgo202204162048262.png)
+  ![ ](https://ypyun-cdn.u1n1.com/img/picgo202204162048262.png)
 
   **细节注意：**
 
@@ -1005,7 +1012,7 @@ int[] c = {2,3,4,5,6}; // 最后一个值后面的逗号可加可不加
 1234567891011121314
 ```
 
-![image-20220113194543786](https://cdn.u1n1.com/img/picgo202204162048270.png)
+![image-20220113194543786](https://ypyun-cdn.u1n1.com/img/picgo202204162048270.png)
 
 **注意细节**
 
@@ -1019,7 +1026,7 @@ int[] c = {2,3,4,5,6}; // 最后一个值后面的逗号可加可不加
 
 **值传递和引用传递的区别**
 
-![image-20220113235032216](https://cdn.u1n1.com/img/picgo202204162048684.png)
+![image-20220113235032216](https://ypyun-cdn.u1n1.com/img/picgo202204162048684.png)
 
 **数组拷贝 != 数组赋值（引用传递）**
 
@@ -1037,7 +1044,7 @@ for(int i = 0;i < a.length;i++){
 12345678910
 ```
 
-![img](https://cdn.u1n1.com/img/picgo202204162048695.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204162048695.png)
 
 ### 二维数组
 
@@ -1076,11 +1083,11 @@ for (int i = 0; i < a.length; i++) {
 
 **二维数组的内存图分析**
 
-![image-20220115201337926](https://cdn.u1n1.com/img/picgo202204162048696.png)
+![image-20220115201337926](https://ypyun-cdn.u1n1.com/img/picgo202204162048696.png)
 
 **易错题**
 
-![image-20220115204814507](https://cdn.u1n1.com/img/picgo202204162048698.png)
+![image-20220115204814507](https://ypyun-cdn.u1n1.com/img/picgo202204162048698.png)
 
 ### 多态数组
 
@@ -1174,7 +1181,7 @@ Car car = new Car();
 
 #### 类和对象的内存图
 
-![image-20220116151322309](https://cdn.u1n1.com/img/picgo202204162048730.png)
+![image-20220116151322309](https://ypyun-cdn.u1n1.com/img/picgo202204162048730.png)
 
 ### 类的组成
 
@@ -1202,7 +1209,7 @@ class person{
 
 - 属性如果不赋值，则有默认值跟数组是一样的
 
-  ![image-20220116152308606](https://cdn.u1n1.com/img/picgo202204162048735.png)
+  ![image-20220116152308606](https://ypyun-cdn.u1n1.com/img/picgo202204162048735.png)
 
 #### 成员方法
 
@@ -1428,7 +1435,7 @@ a->c
 
 比如：输出println语句
 
-![image-20220126235245517](https://cdn.u1n1.com/img/picgo202204162048196.png)
+![image-20220126235245517](https://ypyun-cdn.u1n1.com/img/picgo202204162048196.png)
 
 ##### 方法重写/覆盖
 
@@ -1682,7 +1689,7 @@ Java不支持像C++中那样的复制构造函数，这个不同点是因为如�
 
 IDEA开发工具的简单分布介绍
 
-![image-20220129161435477](https://cdn.u1n1.com/img/picgo202204162048200.png)
+![image-20220129161435477](https://ypyun-cdn.u1n1.com/img/picgo202204162048200.png)
 
 #### 包
 
@@ -1702,7 +1709,7 @@ IDEA开发工具的简单分布介绍
 
 *指的是包下所有的类都导入
 
-![image-20220129231524402](https://cdn.u1n1.com/img/picgo202204162048204.png)
+![image-20220129231524402](https://ypyun-cdn.u1n1.com/img/picgo202204162048204.png)
 
 **细节注意**
 
@@ -1734,7 +1741,7 @@ IDEA开发工具的简单分布介绍
 - 默认访问修饰符（无修饰符）：对同一个包中的类（包含子类）公开，但是对不同包的子类不公开
 - private : 只有类本身可以访问
 
-![image-20220130203735334](https://cdn.u1n1.com/img/picgo202204162048207.png)
+![image-20220130203735334](https://ypyun-cdn.u1n1.com/img/picgo202204162048207.png)
 
 **使用注意细节**
 
@@ -1753,7 +1760,7 @@ IDEA开发工具的简单分布介绍
 
 封装的实现步骤
 
-![image-20220130222704836](https://cdn.u1n1.com/img/picgo202204162048533.png)
+![image-20220130222704836](https://ypyun-cdn.u1n1.com/img/picgo202204162048533.png)
 
 ##### 继承
 
@@ -1763,7 +1770,7 @@ extends 关键字
 
 好处：解决代码复用性，当多个类中有相同的属性和方法时候，我们可以抽出相同属性和方法作为父类
 
-![image-20220201233629049](https://cdn.u1n1.com/img/picgo202204162048536.png)
+![image-20220201233629049](https://ypyun-cdn.u1n1.com/img/picgo202204162048536.png)
 
 **注意细节**
 
@@ -1811,7 +1818,7 @@ extends 关键字
 
 查找属性和方法数据根据就近原则
 
-![image-20220203234708017](https://cdn.u1n1.com/img/picgo202204162048564.png)
+![image-20220203234708017](https://ypyun-cdn.u1n1.com/img/picgo202204162048564.png)
 
 **详解super关键字**
 
@@ -1825,7 +1832,7 @@ extends 关键字
 
 this 和 super 的区别
 
-![image-20220204225246537](https://cdn.u1n1.com/img/picgo202204162048566.png) **
+![image-20220204225246537](https://ypyun-cdn.u1n1.com/img/picgo202204162048566.png) **
 
 ##### 多态
 
@@ -1923,7 +1930,7 @@ class son extends father{ // 子类
 
 #### Object类详解
 
-![image-20220205225527879](https://cdn.u1n1.com/img/picgo202204162048570.png)
+![image-20220205225527879](https://ypyun-cdn.u1n1.com/img/picgo202204162048570.png)
 
 ##### equals
 
@@ -2063,7 +2070,7 @@ public String toString() {
 点击Setting --> Build,Execution,Deployment --> Debugger --> Stepping
 把Do not step into the classes中的java.*，javax.*取消勾选
 
-![img](https://cdn.u1n1.com/img/picgo202204162048579.jpeg)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204162048579.jpeg)
 
 **相关面试题**
 
@@ -2970,7 +2977,7 @@ enum Session{
 
 **枚举常用方法**
 
-![image-20220221102947758](https://cdn.u1n1.com/img/picgo202204162048861.png)
+![image-20220221102947758](https://ypyun-cdn.u1n1.com/img/picgo202204162048861.png)
 
 ```java
  // 测试枚举常用方法
@@ -3162,7 +3169,7 @@ public class Exception01 {
 - 运行时异常，编译器不要求强制处置的异常（一般是逻辑错误）
 - 编译时异常是编译器要求必须处置的异常
 
-![image-20220222105957339](https://cdn.u1n1.com/img/picgo202204162048859.png)
+![image-20220222105957339](https://ypyun-cdn.u1n1.com/img/picgo202204162048859.png)
 
 ### 运行时异常
 
@@ -3250,7 +3257,7 @@ class NumberFormatException {
 
 编译时异常是编译器要求必须处置的异常
 
-![image-20220222153412877](https://cdn.u1n1.com/img/picgo202204162048881.png)
+![image-20220222153412877](https://ypyun-cdn.u1n1.com/img/picgo202204162048881.png)
 
 ### 异常处理
 
@@ -3300,17 +3307,17 @@ try{
 
 throws 抛出形式：
 
-![image-20220222155846503](https://cdn.u1n1.com/img/picgo202204162048172.png)
+![image-20220222155846503](https://ypyun-cdn.u1n1.com/img/picgo202204162048172.png)
 
 **习题一**
 
 当异常处理后需要返回数据，catch和finally中都有return语句，最终返回的数据是finally中的数据
 
-![image-20220222162034818](https://cdn.u1n1.com/img/picgo202204162048190.png)
+![image-20220222162034818](https://ypyun-cdn.u1n1.com/img/picgo202204162048190.png)
 
 **习题二**
 
-![image-20220222161954872](https://cdn.u1n1.com/img/picgo202204162048208.png)
+![image-20220222161954872](https://ypyun-cdn.u1n1.com/img/picgo202204162048208.png)
 
 ### 自定义异常
 
@@ -3374,15 +3381,15 @@ Java的异常处理是通过5个关键词来实现的：try、catch、throw、th
 
 **Boolean**
 
-![image-20211026161841862](https://cdn.u1n1.com/img/picgo202204162048212.png)
+![image-20211026161841862](https://ypyun-cdn.u1n1.com/img/picgo202204162048212.png)
 
 Character
 
-![image-20211026162014901](https://cdn.u1n1.com/img/picgo202204162048604.png)
+![image-20211026162014901](https://ypyun-cdn.u1n1.com/img/picgo202204162048604.png)
 
 Number父类下的直接子类
 
-![image-20211026165801659](https://cdn.u1n1.com/img/picgo202204162048619.png)
+![image-20211026165801659](https://ypyun-cdn.u1n1.com/img/picgo202204162048619.png)
 
 #### 装箱 & 拆箱
 
@@ -3415,17 +3422,17 @@ public class Wrapper01 {
 
 首先打四个断点，分别探索这四个断点的跳转
 
-![image-20211027111537252](https://cdn.u1n1.com/img/picgo202204162048620.png)
+![image-20211027111537252](https://ypyun-cdn.u1n1.com/img/picgo202204162048620.png)
 
 以下是依次跳转的函数
 
-![image-20211027111819114](https://cdn.u1n1.com/img/picgo202204162048631.png)
+![image-20211027111819114](https://ypyun-cdn.u1n1.com/img/picgo202204162048631.png)
 
-![image-20211027111852782](https://cdn.u1n1.com/img/picgo202204162048633.png)
+![image-20211027111852782](https://ypyun-cdn.u1n1.com/img/picgo202204162048633.png)
 
-![image-20211027111925147](https://cdn.u1n1.com/img/picgo202204162048637.png)
+![image-20211027111925147](https://ypyun-cdn.u1n1.com/img/picgo202204162048637.png)
 
-![image-20211027111951932](https://cdn.u1n1.com/img/picgo202204162048963.png)
+![image-20211027111951932](https://ypyun-cdn.u1n1.com/img/picgo202204162048963.png)
 
 **总结**
 
@@ -3499,7 +3506,7 @@ public class WrapperVsString {
 
 以Integer包装类为例
 
-![Integer](https://cdn.u1n1.com/img/picgo202204162048966.png)
+![Integer](https://ypyun-cdn.u1n1.com/img/picgo202204162048966.png)
 
 **包装类的相关面试题**
 
@@ -3553,7 +3560,7 @@ public static void main(String[] args) {
 
 #### 接口和构造器
 
-![image-20211028164429590](https://cdn.u1n1.com/img/picgo202204162048976.png)
+![image-20211028164429590](https://ypyun-cdn.u1n1.com/img/picgo202204162048976.png)
 
 #### String内存图
 
@@ -3568,7 +3575,7 @@ class code{
 1234567
 ```
 
-![image-20220223163658951](https://cdn.u1n1.com/img/picgo202204162048979.png)
+![image-20220223163658951](https://ypyun-cdn.u1n1.com/img/picgo202204162048979.png)
 
 内存图： 字符串 VS 字符数组
 
@@ -3592,7 +3599,7 @@ class Text{
 1234567891011121314
 ```
 
-![image-20220223162328369](https://cdn.u1n1.com/img/picgo202204162048981.png)
+![image-20220223162328369](https://ypyun-cdn.u1n1.com/img/picgo202204162048981.png)
 
 #### String类的常用方法
 
@@ -3650,7 +3657,7 @@ System.out.println(show); // 姓名：lns	年龄：18	身高：185.350	性别：
 
 [String 官方文档](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html)
 
-![String](https://cdn.u1n1.com/img/picgo202204162048982.png)
+![String](https://ypyun-cdn.u1n1.com/img/picgo202204162048982.png)
 
 #### 相关习题
 
@@ -3714,7 +3721,7 @@ public String toString() {
 
 概念：代表可变的字符序列，可以对字符串内容进行增删，是一个容器
 
-![image-20220223203041672](https://cdn.u1n1.com/img/picgo202204162048428.png)
+![image-20220223203041672](https://ypyun-cdn.u1n1.com/img/picgo202204162048428.png)
 
 #### 构造方法
 
@@ -3867,7 +3874,7 @@ System.out.println(sb.length()); // 4
 
 大部分与 StringBuffer类似
 
-![image-20220224105411449](https://cdn.u1n1.com/img/picgo202204162048439.png)
+![image-20220224105411449](https://ypyun-cdn.u1n1.com/img/picgo202204162048439.png)
 
 特殊点：没有做互斥处理，因此在单线程下使用
 
@@ -4199,7 +4206,7 @@ System.out.println(sdf.format(sdf.parse(dateStr))); // 2021年12月363日 05:07:
 
 **SimpleDateFormat的规定格式**
 
-![image-20220225170623223](https://cdn.u1n1.com/img/picgo202204162048440.png)
+![image-20220225170623223](https://ypyun-cdn.u1n1.com/img/picgo202204162048440.png)
 
 #### 第二代日期类
 
@@ -4428,19 +4435,19 @@ Java语言是面向对象的语言，其设计理念是“一切皆对象”。�
 
 #### Collection接口框架
 
-![image-20220226113621627](https://cdn.u1n1.com/img/picgo202204162048456.png)
+![image-20220226113621627](https://ypyun-cdn.u1n1.com/img/picgo202204162048456.png)
 
 **补充框架图**
 
-![image-20220303102523695](https://cdn.u1n1.com/img/picgo202204162048458.png)
+![image-20220303102523695](https://ypyun-cdn.u1n1.com/img/picgo202204162048458.png)
 
 #### Map接口框架
 
-![image-20220226114159934](https://cdn.u1n1.com/img/picgo202204162048482.png)
+![image-20220226114159934](https://ypyun-cdn.u1n1.com/img/picgo202204162048482.png)
 
 **补充框架图**
 
-![image-20220303102607310](https://cdn.u1n1.com/img/picgo202204162048899.png)
+![image-20220303102607310](https://ypyun-cdn.u1n1.com/img/picgo202204162048899.png)
 
 ### Collection接口
 
@@ -4450,7 +4457,7 @@ Collection 实现 Iterable接口 ： public interface Collection extends Iterabl
 
 ##### 遍历方式-迭代器
 
-![image-20220226131905068](https://cdn.u1n1.com/img/picgo202204162048897.png)
+![image-20220226131905068](https://ypyun-cdn.u1n1.com/img/picgo202204162048897.png)
 
 Iterator接口 又称为 迭代器，主要用于遍历Collcection集合中的元素
 
@@ -4716,7 +4723,7 @@ public class ListMethod {
 
 是由数组实现数据存储
 
-![image-20220227132949556](https://cdn.u1n1.com/img/picgo202204162048903.png)
+![image-20220227132949556](https://ypyun-cdn.u1n1.com/img/picgo202204162048903.png)
 
 特点：
 
@@ -4743,7 +4750,7 @@ public class ListMethod {
 
 ###### ArrayList源码分析
 
-![image-20220226184245606](https://cdn.u1n1.com/img/picgo202204162048906.png)
+![image-20220226184245606](https://ypyun-cdn.u1n1.com/img/picgo202204162048906.png)
 
 1. ArrayList类数据存储在Object类数组中（elementData）
 
@@ -4762,7 +4769,7 @@ public class ListMethod {
 
 1.设置断点
 
-![image-20220226200138044](https://cdn.u1n1.com/img/picgo202204162048915.png)
+![image-20220226200138044](https://ypyun-cdn.u1n1.com/img/picgo202204162048915.png)
 
 2.debug跳转
 
@@ -4812,7 +4819,7 @@ public static int newLength(int oldLength, int minGrowth, int prefGrowth) {
 
 **有参构造器**
 
-![image-20220226202444863](https://cdn.u1n1.com/img/picgo202204162048917.png)
+![image-20220226202444863](https://ypyun-cdn.u1n1.com/img/picgo202204162048917.png)
 
 ```java
 public ArrayList(int initialCapacity) {
@@ -4832,7 +4839,7 @@ public ArrayList(int initialCapacity) {
 
 是由数组实现数据存储
 
-![image-20220227132833785](https://cdn.u1n1.com/img/picgo202204162048321.png)
+![image-20220227132833785](https://ypyun-cdn.u1n1.com/img/picgo202204162048321.png)
 
 **Vector的基本介绍**
 
@@ -4898,7 +4905,7 @@ public static int newLength(int oldLength, int minGrowth, int prefGrowth) {
 - 可以添加任意元素包括null，并且可以重复
 - 线程不安全没有实现同步
 
-![image-20220227133039410](https://cdn.u1n1.com/img/picgo202204162048322.png)
+![image-20220227133039410](https://ypyun-cdn.u1n1.com/img/picgo202204162048322.png)
 
 **LinkedList类的底层结构**
 
@@ -4906,17 +4913,17 @@ public static int newLength(int oldLength, int minGrowth, int prefGrowth) {
 
 2. 其中含有两个属性：first 和 last 分别指向首节点和尾节点
 
-   ![image-20220227134230977](https://cdn.u1n1.com/img/picgo202204162048325.png)
+   ![image-20220227134230977](https://ypyun-cdn.u1n1.com/img/picgo202204162048325.png)
 
 3. 每个节点里面含有prev，next，item三个属性，其中通过prev指向前一个节点，通过next指向后一个节点，用item来存储数据
 
-   ![image-20220227142526922](https://cdn.u1n1.com/img/picgo202204162048326.png)
+   ![image-20220227142526922](https://ypyun-cdn.u1n1.com/img/picgo202204162048326.png)
 
 4. 进行添加和删除操作，效率比数组高
 
 **添加数据源码分析**
 
-![image-20220227160330222](https://cdn.u1n1.com/img/picgo202204162048334.png)
+![image-20220227160330222](https://ypyun-cdn.u1n1.com/img/picgo202204162048334.png)
 
 ```java
 // 添加第一个数据
@@ -5020,7 +5027,7 @@ public HashSet() {
 
 **HashSet框架图**
 
-![image-20220228105517461](https://cdn.u1n1.com/img/picgo202204162048335.png)
+![image-20220228105517461](https://ypyun-cdn.u1n1.com/img/picgo202204162048335.png)
 
 特点：
 
@@ -5095,7 +5102,7 @@ class Node{ // 节点
 
 图解
 
-![image-20220227201842892](https://cdn.u1n1.com/img/picgo202204162048720.png)
+![image-20220227201842892](https://ypyun-cdn.u1n1.com/img/picgo202204162048720.png)
 
 用该图分析HashSet底层过程
 
@@ -5327,7 +5334,7 @@ public HashMap(int initialCapacity, float loadFactor) {
 
 **LinkedHashSet框架图**
 
-![image-20220228105904095](https://cdn.u1n1.com/img/picgo202204162048725.png)
+![image-20220228105904095](https://ypyun-cdn.u1n1.com/img/picgo202204162048725.png)
 
 特点：
 
@@ -5336,7 +5343,7 @@ public HashMap(int initialCapacity, float loadFactor) {
 
 **LinkedHashSet类的底层分析**
 
-![image-20220228170158121](https://cdn.u1n1.com/img/picgo202204162048726.png)
+![image-20220228170158121](https://ypyun-cdn.u1n1.com/img/picgo202204162048726.png)
 
 ```java
 // LinkedHashSet节点源码
@@ -5405,7 +5412,7 @@ public TreeSet() {
 123
 ```
 
-![image-20220302162013910](https://cdn.u1n1.com/img/picgo202204162048743.png)
+![image-20220302162013910](https://ypyun-cdn.u1n1.com/img/picgo202204162048743.png)
 
 ### Map接口
 
@@ -5418,7 +5425,7 @@ public interface Map<K, V> 与Collection接口并列存在
 - Map中的Key不允许重复，但是Value可以重复（并且数据都可以是null）
 - Key 和 Value存在一对一的关系，总是能通过Key找到对应得Value
 
-![image-20220228191506219](https://cdn.u1n1.com/img/picgo202204162048746.png)
+![image-20220228191506219](https://ypyun-cdn.u1n1.com/img/picgo202204162048746.png)
 
 **深入理解map接口的Node节点**
 
@@ -5536,7 +5543,7 @@ HashMap底层是**数组**+**链表**+**红黑树**
 
 - Key不允许重复，但是Value可以重复（并且数据都可以是null）; 如果重复，将会替换掉value值
 
-  ![image-20220301171734335](https://cdn.u1n1.com/img/picgo202204162048745.png)
+  ![image-20220301171734335](https://ypyun-cdn.u1n1.com/img/picgo202204162048745.png)
 
 - Key 和 Value存在一对一的关系，总是能通过Key找到对应得Value
 
@@ -5544,7 +5551,7 @@ HashMap底层是**数组**+**链表**+**红黑树**
 
 **HashMap框架图**
 
-![image-20220301171028407](https://cdn.u1n1.com/img/picgo202204162048148.png)
+![image-20220301171028407](https://ypyun-cdn.u1n1.com/img/picgo202204162048148.png)
 
 **注意 HashMap扩容机制等价于HashSet扩容机制,如上述**
 
@@ -5556,7 +5563,7 @@ HashMap底层是**数组**+**链表**+**红黑树**
 
 - Hashtable的key和value都不允许是null，如果是，将会抛出空指针异常
 
-  ![image-20220302085244120](https://cdn.u1n1.com/img/picgo202204162048151.png)
+  ![image-20220302085244120](https://ypyun-cdn.u1n1.com/img/picgo202204162048151.png)
 
 - Hashtable是线程安全的，与HashMap不同
 
@@ -5568,7 +5575,7 @@ HashMap底层是**数组**+**链表**+**红黑树**
 
 **Hashtable框架图**
 
-![image-20220302135647398](https://cdn.u1n1.com/img/picgo202204162048154.png)
+![image-20220302135647398](https://ypyun-cdn.u1n1.com/img/picgo202204162048154.png)
 
 **Hashtable扩容机制**
 
@@ -5659,7 +5666,7 @@ protected void rehash() {
 
 **细节说明**
 
-![image-20220302155704520](https://cdn.u1n1.com/img/picgo202204162048162.png)
+![image-20220302155704520](https://ypyun-cdn.u1n1.com/img/picgo202204162048162.png)
 
 ```java
 // 源码说明
@@ -5939,13 +5946,13 @@ class car{
 12345678910111213141516171819202122232425262728293031
 ```
 
-![img](https://cdn.u1n1.com/img/picgo202204162048164.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204162048164.png)
 
 #### Properties类
 
 **基本介绍**
 
-![image-20220302141600899](https://cdn.u1n1.com/img/picgo202204162048164.png)
+![image-20220302141600899](https://ypyun-cdn.u1n1.com/img/picgo202204162048164.png)
 
 **Properties类特点**
 
@@ -6007,7 +6014,7 @@ public class Properties_ {
 12345678910111213141516171819202122
 ```
 
-![image-20220317090850727](https://cdn.u1n1.com/img/picgo202204162048590.png)
+![image-20220317090850727](https://ypyun-cdn.u1n1.com/img/picgo202204162048590.png)
 
 ### 如何选择集合实现类
 
@@ -6143,7 +6150,7 @@ java.util包下也有线程安全的集合类，例如Vector、Hashtable。这�
 
 如上述我的HashMap和Hashtable的与添加源码分析
 
-![img](https://cdn.u1n1.com/img/picgo202204162048591.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204162048591.png)
 
 **如何得到一个线程安全的Map？**
 
@@ -6388,7 +6395,7 @@ public void XXX(E e){}
 
 概念：进程是指运行中的程序，是程序的一次执行过程或是正在运行的一个程序。动态过程：产生，存在，消亡的过程
 
-![image-20220306182410060](https://cdn.u1n1.com/img/picgo202204162048595.png)
+![image-20220306182410060](https://ypyun-cdn.u1n1.com/img/picgo202204162048595.png)
 
 **那么线程是什么？**
 
@@ -6425,9 +6432,9 @@ public enum State {
 1234567891011121314
 ```
 
-![image-20220309092226604](https://cdn.u1n1.com/img/picgo202204162048606.png)
+![image-20220309092226604](https://ypyun-cdn.u1n1.com/img/picgo202204162048606.png)
 
-![image-20220309205604317](https://cdn.u1n1.com/img/picgo202204162048611.png)
+![image-20220309205604317](https://ypyun-cdn.u1n1.com/img/picgo202204162048611.png)
 
 ### 线程基本使用
 
@@ -6445,13 +6452,13 @@ public enum State {
    1234
    ```
 
-![image-20220306191925689](https://cdn.u1n1.com/img/picgo202204162048611.png)
+![image-20220306191925689](https://ypyun-cdn.u1n1.com/img/picgo202204162048611.png)
 
 #### 源码解析多线程机制
 
 **多线程机制说明**
 
-![image-20220307111422720](https://cdn.u1n1.com/img/picgo202204162048106.png)
+![image-20220307111422720](https://ypyun-cdn.u1n1.com/img/picgo202204162048106.png)
 
 用例代码
 
@@ -6492,11 +6499,11 @@ public class Thread01 extends Thread{
 
 注意要main方法和其他进程要持续较长时间。这样子才好观测
 
-![image-20220307112032227](https://cdn.u1n1.com/img/picgo202204162048110.png)
+![image-20220307112032227](https://ypyun-cdn.u1n1.com/img/picgo202204162048110.png)
 
 **源码分析**
 
-![image-20220307194551556](https://cdn.u1n1.com/img/picgo202204162048114.png)
+![image-20220307194551556](https://ypyun-cdn.u1n1.com/img/picgo202204162048114.png)
 
 ```java
 // 调用线程start方法：thread01.start();
@@ -7021,7 +7028,7 @@ class withdrawals implements Runnable{
 
 文件在程序中是以流的方式来操作的
 
-![image-20220313101045337](https://cdn.u1n1.com/img/picgo202204162048121.png)
+![image-20220313101045337](https://ypyun-cdn.u1n1.com/img/picgo202204162048121.png)
 
 **常见文件的操作**
 
@@ -7093,7 +7100,7 @@ public static void main(String[] args) throws IOException {
 
 ### IO流原理及流的分类
 
-![image-20220313160149525](https://cdn.u1n1.com/img/picgo202204162048122.png)
+![image-20220313160149525](https://ypyun-cdn.u1n1.com/img/picgo202204162048122.png)
 
 IO流用于处理数据传输，如读写文件或者网络通讯
 
@@ -7118,7 +7125,7 @@ IO流用于处理数据传输，如读写文件或者网络通讯
 
 ###### FileInputStream
 
-![image-20220313195635130](https://cdn.u1n1.com/img/picgo202204162048122.png)
+![image-20220313195635130](https://ypyun-cdn.u1n1.com/img/picgo202204162048122.png)
 
 ```java
 // 文件输入流输入以字节的方式
@@ -7203,7 +7210,7 @@ class car implements Serializable {
 1234567891011121314151617181920212223242526272829
 ```
 
-![image-20220316161318072](https://cdn.u1n1.com/img/picgo202204162048536.png)
+![image-20220316161318072](https://ypyun-cdn.u1n1.com/img/picgo202204162048536.png)
 
 ##### OutputStream：字节输出流
 
@@ -7211,13 +7218,13 @@ class car implements Serializable {
 
 **构造方法**
 
-![image-20220313200622317](https://cdn.u1n1.com/img/picgo202204162048538.png)
+![image-20220313200622317](https://ypyun-cdn.u1n1.com/img/picgo202204162048538.png)
 
-![image-20220313200544817](https://cdn.u1n1.com/img/picgo202204162048546.png)
+![image-20220313200544817](https://ypyun-cdn.u1n1.com/img/picgo202204162048546.png)
 
 **写操作**
 
-![image-20220313195559550](https://cdn.u1n1.com/img/picgo202204162048546.png)
+![image-20220313195559550](https://ypyun-cdn.u1n1.com/img/picgo202204162048546.png)
 
 ```java
 String fileName = "C:\\Users\\Ushop\\Desktop\\JavaLoad\\test\\hello.txt";
@@ -7279,7 +7286,7 @@ fos.close();
 
 用FileInputStream和FileOutputStream流进行图片文件读写
 
-![image-20220314110039594](https://cdn.u1n1.com/img/picgo202204162048551.png)
+![image-20220314110039594](https://ypyun-cdn.u1n1.com/img/picgo202204162048551.png)
 
 ```java
 String fileName = "C:\\Users\\Ushop\\Desktop\\JavaLoad\\test\\1.png";
@@ -7356,7 +7363,7 @@ class car implements Serializable {
 1234567891011121314151617181920212223242526272829
 ```
 
-![image-20220316154453432](https://cdn.u1n1.com/img/picgo202204162048553.png)
+![image-20220316154453432](https://ypyun-cdn.u1n1.com/img/picgo202204162048553.png)
 
 **注意事项**
 
@@ -7369,13 +7376,13 @@ class car implements Serializable {
 
 ##### 常见其他字节流
 
-![image-20220316170957816](https://cdn.u1n1.com/img/picgo202204162048938.png)
+![image-20220316170957816](https://ypyun-cdn.u1n1.com/img/picgo202204162048938.png)
 
 ###### printstream : 打印流
 
 默认输出到显示屏，可以通过setOut方法修改显示地址
 
-![image-20220317082339399](https://cdn.u1n1.com/img/picgo202204162048946.png)
+![image-20220317082339399](https://ypyun-cdn.u1n1.com/img/picgo202204162048946.png)
 
 #### 字符流
 
@@ -7385,7 +7392,7 @@ class car implements Serializable {
 - 处理流包装节点流，既可以消除不同节点流的实现差异，也可以提供更方便的方法来完成输入输出
 - 处理流采用了修饰器设计模式，不会直接与数据源相连
 
-![image-20220314203847865](https://cdn.u1n1.com/img/picgo202204162048952.png)
+![image-20220314203847865](https://ypyun-cdn.u1n1.com/img/picgo202204162048952.png)
 
 （备注：推回输入流和特殊流也属于处理流）
 
@@ -7395,11 +7402,11 @@ class car implements Serializable {
 
 ###### FileReader：字符输入流
 
-![image-20220314111216221](https://cdn.u1n1.com/img/picgo202204162048955.png)
+![image-20220314111216221](https://ypyun-cdn.u1n1.com/img/picgo202204162048955.png)
 
 **构造器**
 
-![image-20220314160733620](https://cdn.u1n1.com/img/picgo202204162048956.png)
+![image-20220314160733620](https://ypyun-cdn.u1n1.com/img/picgo202204162048956.png)
 
 ```java
 // 读操作
@@ -7429,11 +7436,11 @@ new String(char[],off,len) // 将索引从off开始len个字符的转换成字�
 
 ###### FileWriter：字符输出流
 
-![image-20220314171840321](https://cdn.u1n1.com/img/picgo202204162048959.png)
+![image-20220314171840321](https://ypyun-cdn.u1n1.com/img/picgo202204162048959.png)
 
 **构造器**
 
-![image-20220314164040574](https://cdn.u1n1.com/img/picgo202204162048368.png)
+![image-20220314164040574](https://ypyun-cdn.u1n1.com/img/picgo202204162048368.png)
 
 注意：FileWriter使用，必须要关闭（close）或者 刷新（flush）,否则写入不到指定的文件！
 
@@ -7532,7 +7539,7 @@ Writer的子类：可以将OutputStream(字节流)转换成Writer(字符流)
 
 文件保存编码
 
-![image-20220316204213177](https://cdn.u1n1.com/img/picgo202204162048369.png)
+![image-20220316204213177](https://ypyun-cdn.u1n1.com/img/picgo202204162048369.png)
 
 ```java
 // 代码示例
@@ -7551,11 +7558,11 @@ public static void main(String[] args) throws IOException {
 
 正确解码
 
-![image-20220316204503707](https://cdn.u1n1.com/img/picgo202204162048380.png)
+![image-20220316204503707](https://ypyun-cdn.u1n1.com/img/picgo202204162048380.png)
 
 错误解码
 
-![image-20220316204358599](https://cdn.u1n1.com/img/picgo202204162048384.png)
+![image-20220316204358599](https://ypyun-cdn.u1n1.com/img/picgo202204162048384.png)
 
 ### 相关面试题
 
@@ -7563,7 +7570,7 @@ public static void main(String[] args) throws IOException {
 
 Java提供了大量的类来支持IO操作，下表给大家整理了其中比较常用的一些类。其中，黑色字体的是抽象基类，其他所有的类都继承自它们。红色字体的是节点流，蓝色字体的是处理流。
 
-![image-20220317092617813](https://cdn.u1n1.com/img/picgo202204162048389.png)
+![image-20220317092617813](https://ypyun-cdn.u1n1.com/img/picgo202204162048389.png)
 
 根据命名很容易理解各个流的作用：
 
@@ -7617,13 +7624,13 @@ serialVersionUID代表序列化的版本，通过定义类的序列化版本，�
 - 查看ip地址：ipconfig
 - 组成：网络地址+主机地址 如 192.168.16.22
 
-![img](https://cdn.u1n1.com/img/picgo202204162048391.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204162048391.png)
 
 IPv6的地址长度为128位，16个字节是IPv4的四倍
 
-![image-20211113143303713](https://cdn.u1n1.com/img/picgo202204162048806.png)
+![image-20211113143303713](https://ypyun-cdn.u1n1.com/img/picgo202204162048806.png)
 
-![image-20211113145529149](https://cdn.u1n1.com/img/picgo202204162048804.png)
+![image-20211113145529149](https://ypyun-cdn.u1n1.com/img/picgo202204162048804.png)
 
 #### 域名
 
@@ -7633,7 +7640,7 @@ IPv6的地址长度为128位，16个字节是IPv4的四倍
 
 www.baidu.com <=> 180.101.49.11
 
-![image-20211113150218328](https://cdn.u1n1.com/img/picgo202204162048815.png)
+![image-20211113150218328](https://ypyun-cdn.u1n1.com/img/picgo202204162048815.png)
 
 #### 端口号
 
@@ -7641,27 +7648,27 @@ www.baidu.com <=> 180.101.49.11
 
 范围：以整数形式 0~65535（2个字节） （**注意0~1024通常被占用**）
 
-![image-20211113152710508](https://cdn.u1n1.com/img/picgo202204162048817.png)
+![image-20211113152710508](https://ypyun-cdn.u1n1.com/img/picgo202204162048817.png)
 
-![image-20211113151846001](https://cdn.u1n1.com/img/picgo202204162048818.png)
+![image-20211113151846001](https://ypyun-cdn.u1n1.com/img/picgo202204162048818.png)
 
 #### 网络通讯协议
 
 数据，在网络编程中，数据的组织形式就是协议（需要按照规定好的协议方式）
 
-![image-20211113154345000](https://cdn.u1n1.com/img/picgo202204162048821.png)
+![image-20211113154345000](https://ypyun-cdn.u1n1.com/img/picgo202204162048821.png)
 
-![image-20220317184548885](https://cdn.u1n1.com/img/picgo202204162048271.png)
+![image-20220317184548885](https://ypyun-cdn.u1n1.com/img/picgo202204162048271.png)
 
 ### TCP 和 UDP
 
-![image-20211113170033305](https://cdn.u1n1.com/img/picgo202204162048297.png)
+![image-20211113170033305](https://ypyun-cdn.u1n1.com/img/picgo202204162048297.png)
 
 ### InetAddress
 
 **实现功能**
 
-![image-20211113173703985](https://cdn.u1n1.com/img/picgo202204162048296.png)
+![image-20211113173703985](https://ypyun-cdn.u1n1.com/img/picgo202204162048296.png)
 
 **方法：**(**InetAddress**对象： 主机名/IP地址)
 
@@ -7677,7 +7684,7 @@ www.baidu.com <=> 180.101.49.11
 
 比如找不到local host 或者不允许找
 
-![image-20211113182725146](https://cdn.u1n1.com/img/picgo202204162048310.png)
+![image-20211113182725146](https://ypyun-cdn.u1n1.com/img/picgo202204162048310.png)
 
 ```java
 // 需要捕获异常，可能会出现异常
@@ -7714,9 +7721,9 @@ try {
 
 客户端 <==> 服务端
 
-![image-20211114133940621](https://cdn.u1n1.com/img/picgo202204162048335.png)
+![image-20211114133940621](https://ypyun-cdn.u1n1.com/img/picgo202204162048335.png)
 
-![image-20211114134611442](https://cdn.u1n1.com/img/picgo202204162048339.png)
+![image-20211114134611442](https://ypyun-cdn.u1n1.com/img/picgo202204162048339.png)
 
 ##### 发送一次数据案例(字节流)
 
@@ -7727,7 +7734,7 @@ try {
 3. 客户端连接服务端并发送一串字符串（字节数组） 然后退出
 4. 服务端接收到客户端发送的信息 输出并退出
 
-![image-20211114140531301](https://cdn.u1n1.com/img/picgo202204162048768.png)
+![image-20211114140531301](https://ypyun-cdn.u1n1.com/img/picgo202204162048768.png)
 
 **实现代码**
 
@@ -7806,9 +7813,9 @@ public class TCPServer {
 
 实现结果
 
-![image-20211114164525198](https://cdn.u1n1.com/img/picgo202204162048775.png)
+![image-20211114164525198](https://ypyun-cdn.u1n1.com/img/picgo202204162048775.png)
 
-![image-20211114164612412](https://cdn.u1n1.com/img/picgo202204162048774.png)
+![image-20211114164612412](https://ypyun-cdn.u1n1.com/img/picgo202204162048774.png)
 
 ##### 数据往返传输案例 (字节流)
 
@@ -7819,7 +7826,7 @@ public class TCPServer {
 3. 客户端连接服务端并发送一串字符串（字节数组）并且接收到服务端传来的数据并且显示 然后退出
 4. 服务端接受到客户端发送的信息并传送回一串字符串（字节数组） 然后退出
 
-![image-20211114171311526](https://cdn.u1n1.com/img/picgo202204162048805.png)
+![image-20211114171311526](https://ypyun-cdn.u1n1.com/img/picgo202204162048805.png)
 
 **注意点：socket传输完需要添加结束标记 如：socket.shutdownInput(); // 关闭输入流 socket.shutdownOutput(); // 关闭输出流**
 
@@ -7921,9 +7928,9 @@ public class TCPServer {
 
 实现结果
 
-![image-20211114175421041](https://cdn.u1n1.com/img/picgo202204162048811.png)
+![image-20211114175421041](https://ypyun-cdn.u1n1.com/img/picgo202204162048811.png)
 
-![image-20211114175511636](https://cdn.u1n1.com/img/picgo202204162048812.png)
+![image-20211114175511636](https://ypyun-cdn.u1n1.com/img/picgo202204162048812.png)
 
 ##### 数据往返传输案例 (字符流)
 
@@ -7934,7 +7941,7 @@ public class TCPServer {
 3. 客户端连接服务端并发送一串字符串并且接收到服务端传来的数据并且显示 然后退出
 4. 服务端接受到客户端发送的信息并传送回一串字符串 然后退出
 
-![image-20211114214701218](https://cdn.u1n1.com/img/picgo202204162048184.png)
+![image-20211114214701218](https://ypyun-cdn.u1n1.com/img/picgo202204162048184.png)
 
 演示核心代码
 
@@ -7968,11 +7975,11 @@ bufferedReader.close();
 4. 服务端接受到客户端发送的图片，保存到src下，然后再发送“收到图片”再退出
 5. 客户端接受到“收到图片”再退出
 
-![image-20211116173938490](https://cdn.u1n1.com/img/picgo202204162048181.png)
+![image-20211116173938490](https://ypyun-cdn.u1n1.com/img/picgo202204162048181.png)
 
 我遇到了一点小问题，暂时还不清楚原因：只能传输.jpg图片，不能传输.png图片
 
-![image-20211118200241060](https://cdn.u1n1.com/img/picgo202204162048187.png)
+![image-20211118200241060](https://ypyun-cdn.u1n1.com/img/picgo202204162048187.png)
 
 代码如下
 
@@ -8093,13 +8100,13 @@ public class StreamUtils {
 
 2. netstat -an | more 可以分页显示 ctrl+c退出该指令
 
-   ![image-20211119114947310](https://cdn.u1n1.com/img/picgo202204162048187.png)
+   ![image-20211119114947310](https://ypyun-cdn.u1n1.com/img/picgo202204162048187.png)
 
 3. dos控制行以管理员身份打开 netstat -anb 可以查看哪个应用软件监听该端口
 
 4. 当客户端连接到服务端后实际上客户 TCP/IP随机分配的端口（验证：netstat观测）
 
-   ![image-20211119122203549](https://cdn.u1n1.com/img/picgo202204162048195.png)
+   ![image-20211119122203549](https://ypyun-cdn.u1n1.com/img/picgo202204162048195.png)
 
 #### UDP网络通信编程[了解]
 
@@ -8110,7 +8117,7 @@ public class StreamUtils {
 - DatagramPacket 对象封装了UDP数据报，在数据报中包含了**发送端的IP 地址和端口号以及接收端的IP地址和端口号**
 - UDP协议中每个数据报都给出了完整的地址信息. 因此无需建立连接
 
-![image-20211119172349275](https://cdn.u1n1.com/img/picgo202204162048197.png)
+![image-20211119172349275](https://ypyun-cdn.u1n1.com/img/picgo202204162048197.png)
 
 ##### UDP网络通信编程案例
 
@@ -8254,7 +8261,7 @@ public class udpNodeA {
    2. 第二次握手：服务器收到syn包，必须确认客户的SYN（ack=x+1），同时自己也发送一个SYN包（syn=y），即SYN+ACK包，此时服务器进入**SYN_RECV**状态；
    3. 第三次握手：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ack=y+1），此包发送完毕，客户端和服务器进入**ESTABLISHED**（TCP连接成功）状态，完成三次握手。
 
-   ![image-20220319172024779](https://cdn.u1n1.com/img/picgo202204162048590.png)
+   ![image-20220319172024779](https://ypyun-cdn.u1n1.com/img/picgo202204162048590.png)
 
 **3.介绍一下TCP和UDP的区别**
 
@@ -8337,7 +8344,7 @@ class Cat{
 123456
 ```
 
-![image-20220320195240128](https://cdn.u1n1.com/img/picgo202204162048596.png)
+![image-20220320195240128](https://ypyun-cdn.u1n1.com/img/picgo202204162048596.png)
 
 #### 类加载的生命周期
 
@@ -8345,11 +8352,11 @@ class Cat{
 
 注意：`加载`、`验证`、`准备`、`初始化`四个阶段的开始顺序是依次如此，但是在运行中会交叉运行程序（如：相互调用）；解析阶段可能会出现在初始化之后（为了支持动态绑定）
 
-![image-20220323143344970](https://cdn.u1n1.com/img/picgo202204162048600.png)
+![image-20220323143344970](https://ypyun-cdn.u1n1.com/img/picgo202204162048600.png)
 
 类的加载示例（[图片](https://pdai.tech/md/java/basic/java-basic-x-reflection.html)）
 
-![image-20220323143659380](https://cdn.u1n1.com/img/picgo202204162048601.png)
+![image-20220323143659380](https://ypyun-cdn.u1n1.com/img/picgo202204162048601.png)
 
 ### 反射的使用
 
@@ -8434,11 +8441,11 @@ class Cat extends Animal implements Fly {
 
 Class类与Constructor相关的主要方法如下：
 
-![image-20220323172016983](https://cdn.u1n1.com/img/picgo202204162048605.png)
+![image-20220323172016983](https://ypyun-cdn.u1n1.com/img/picgo202204162048605.png)
 
 关于**Constructor类本身一些常用方法**如下(仅部分，其他可查API)
 
-![image-20220323172033657](https://cdn.u1n1.com/img/picgo202204162048609.png)
+![image-20220323172033657](https://ypyun-cdn.u1n1.com/img/picgo202204162048609.png)
 
 我在这里就不大篇幅的讲述Constructor类的大量方法，用代码举例一些常用方法如下
 
@@ -8510,11 +8517,11 @@ class Person {
 
 Class类与Field对象相关方法如下：
 
-![image-20220323172124461](https://cdn.u1n1.com/img/picgo202204162048046.png)
+![image-20220323172124461](https://ypyun-cdn.u1n1.com/img/picgo202204162048046.png)
 
 关于Field类还有其他常用的方法如下：
 
-![image-20220323172204939](https://cdn.u1n1.com/img/picgo202204162048047.png)
+![image-20220323172204939](https://ypyun-cdn.u1n1.com/img/picgo202204162048047.png)
 
 我在这里就不大篇幅的讲述Field类的大量方法，用代码举例一些常用方法如下
 
@@ -8556,11 +8563,11 @@ class Student {
 
 Class类获取Method对象相关的方法：
 
-![image-20220323203449786](https://cdn.u1n1.com/img/picgo202204162048068.png)
+![image-20220323203449786](https://ypyun-cdn.u1n1.com/img/picgo202204162048068.png)
 
 常用方法如下：
 
-![image-20220323203525186](https://cdn.u1n1.com/img/picgo202204162048075.png)
+![image-20220323203525186](https://ypyun-cdn.u1n1.com/img/picgo202204162048075.png)
 
 我在这里就不大篇幅的讲述Method类的大量方法，用代码举例一些常用方法如下
 

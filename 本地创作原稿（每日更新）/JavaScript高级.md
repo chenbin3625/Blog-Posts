@@ -20,11 +20,11 @@
 
 ### js在定义变量时自动分配内存
 
-![image-20220415131257149](https://cdn.u1n1.com/img/picgo202204151312191.png)
+![image-20220415131257149](https://ypyun-cdn.u1n1.com/img/picgo202204151312191.png)
 
 ### js垃圾回收
 
-![image-20220415131606581](https://cdn.u1n1.com/img/picgo202204151316621.png)
+![image-20220415131606581](https://ypyun-cdn.u1n1.com/img/picgo202204151316621.png)
 
 GC算法
 
@@ -32,7 +32,7 @@ GC算法
 
 js广泛采用：标记清除
 
-![image-20220415132414543](https://cdn.u1n1.com/img/picgo202204151324580.png)
+![image-20220415132414543](https://ypyun-cdn.u1n1.com/img/picgo202204151324580.png)
 
 ## 高阶函数
 

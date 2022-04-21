@@ -6,7 +6,7 @@
 
 来看一个现实中的例子：想想您的房子、公寓或其他住宅的供电方式，如果您想在您的房子里用电，只要把电器的插头插入插座就可以，而不是直接把它连接到电线上——这样做非常低效，而且对于不是电工的人会是困难和危险的。
 
-![img](https://cdn.u1n1.com/img/picgoplug-socket.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgoplug-socket.png)
 
 *图片来自：[Overloaded plug socket](https://www.flickr.com/photos/easy-pics/9518184890/in/photostream/lightbox/) 提供者： [The Clear Communication People](https://www.flickr.com/photos/easy-pics/)于Flickr。*
 
@@ -19,7 +19,7 @@
 - **浏览器API**内置于Web浏览器中，能从浏览器和电脑周边环境中提取数据，并用来做有用的复杂的事情 。例如[Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)提供了一些简单的JavaScript结构以获得位置数据，因此您可以在Google地图上标示您的位置。在后台，浏览器确实使用一些复杂的低级代码（例如C++）与设备的GPS硬件（或可以决定位置数据的任何设施）通信来获取位置数据并把这些数据返回给您的代码中使用浏览器环境；但是，这种复杂性通过API抽象出来，因而与您无关。
 - **第三方API**缺省情况下不会内置于浏览器中，通常必须在Web中的某个地方获取代码和信息。例如[Twitter API](https://dev.twitter.com/overview/documentation) 使您能做一些显示最新推文这样的事情，它提供一系列特殊的结构，可以用来请求Twitter服务并返回特殊的信息。
 
-![img](https://cdn.u1n1.com/img/picgobrowser.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgobrowser.png)
 
 ### [JavaScript，API和其他JavaScript工具之间的关系](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Client-side_web_APIs/Introduction#javascript，api和其他javascript工具之间的关系)
 
@@ -111,11 +111,11 @@ WebAPI功能受到与JavaScript和其他Web技术（例如[同源政策](https:/
 
 另外，一旦调用WebAPI请求，用户就可以在您的代码中启用一些WebAPI请求权限。作为一个例子，在加载我们之前的[Geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation) 示例时，您可能注意到了类似下面的对话框 ：
 
-![img](https://cdn.u1n1.com/img/picgolocation-permission.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgolocation-permission.png)
 
 该 [通知API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) 请求以类似的方式许可：
 
-![img](https://cdn.u1n1.com/img/picgonotification-permission.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgonotification-permission.png)
 
 这些许可提示会被提供给用户以确保安全 - 如果这些提示不在适当位置，那么网站可能会在您不知情的情况下开始秘密跟踪您的位置，或者通过大量恼人的通知向您发送垃圾邮件。
 
@@ -127,7 +127,7 @@ WebAPI功能受到与JavaScript和其他Web技术（例如[同源政策](https:/
 
 另一方面，DOM树如下所示：
 
-![img](https://cdn.u1n1.com/img/picgodom-screenshot.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgodom-screenshot.png)
 
 这里你可以看到，文档中每个元素和文本在树中都有它们自己的入口 — 称之为**节点**。你将用不同的术语来描述节点的类型和它们相对于其他节点的位置：
 
@@ -147,7 +147,7 @@ WebAPI功能受到与JavaScript和其他Web技术（例如[同源政策](https:/
 
 这是通过使用诸如 [`XMLHttpRequest`](https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest) 之类的API或者 — 最近以来的 [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) 来实现. 这些技术允许网页直接处理对服务器上可用的特定资源的 [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) 请求，并在显示之前根据需要对结果数据进行格式化。
 
-![A simple modern architecture for web sites](https://cdn.u1n1.com/img/picgo202204131547894.png)
+![A simple modern architecture for web sites](https://ypyun-cdn.u1n1.com/img/picgo202204131547894.png)
 
 Ajax模型包括使用Web API作为代理来更智能地请求数据，而不仅仅是让浏览器重新加载整个页面。让我们来思考这个意义：
 
@@ -161,7 +161,7 @@ Ajax模型包括使用Web API作为代理来更智能地请求数据，而不仅
 
 为了进一步提高速度，有些网站还会在首次请求时将资产和数据存储在用户的计算机上，这意味着在后续访问中，他们将使用本地版本，而不是在首次加载页面时下载新副本。 内容仅在更新后从服务器重新加载。
 
-![A basic web app data flow architecture](https://cdn.u1n1.com/img/picgo202204131548115.png)
+![A basic web app data flow architecture](https://ypyun-cdn.u1n1.com/img/picgo202204131548115.png)
 
 本文不会涉及这种存储技术。我们稍后会在模块中讨论它。
 
@@ -183,7 +183,7 @@ Ajax模型包括使用Web API作为代理来更智能地请求数据，而不仅
 客户端存储的概念已经存在很长一段时间了。从早期的网络时代开始，网站就使用 [cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies) 来存储信息，以在网站上提供个性化的用户体验。它们是网络上最早最常用的客户端存储形式。
 因为在那个年代，有许多问题——无论是从技术上的还是用户体验的角度——都是困扰着 cookies 的问题。这些问题非常重要，以至于当第一次访问一个网站时，欧洲居民会收到消息，告诉他们是否会使用 cookies 来存储关于他们的数据，而这是由一项被称为[欧盟 Cookie 条例](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies#欧盟cookie指令)的欧盟法律导致的。
 
-![img](https://cdn.u1n1.com/img/picgo202204131633148.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204131633148.png)
 
 由于这些原因，我们不会在本文中教你如何使用cookie。毕竟它过时、存在各种[安全问题](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies#安全)，而且无法存储复杂数据，而且有更好的、更现代的方法可以在用户的计算机上存储种类更广泛的数据。
 cookie的唯一优势是它们得到了非常旧的浏览器的支持，所以如果您的项目需要支持已经过时的浏览器（比如 Internet Explorer 8 或更早的浏览器），cookie可能仍然有用，但是对于大多数项目（很明显不包括本站）来说，您不需要再使用它们了。其实cookie也没什么好说的，`document.cookie`一把梭就完事了。
@@ -298,7 +298,7 @@ web storage 的一个关键特性是，数据在不同页面加载时都存在�
 
 这个应用看起来像这样：
 
-![img](https://cdn.u1n1.com/img/picgo202204131634798.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204131634798.png)
 
 每个笔记都有一个标题和一些正文，每个都可以单独编辑。我们将在下面通过的JavaScript代码提供详细的注释，以帮助您了解正在发生的事情。
 
@@ -481,7 +481,7 @@ web storage 的一个关键特性是，数据在不同页面加载时都存在�
 
 上面的示例已经说明了如何创建一个将大型资产存储在IndexedDB数据库中的应用程序，从而无需多次下载它们。这已经是对用户体验的一个很大的改进，但仍然有一件事 - 每次访问网站时仍然需要下载主要的HTML，CSS和JavaScript文件，这意味着当没有网络连接时，它将无法工作。
 
-![img](https://cdn.u1n1.com/img/picgo202204131635896.png)
+![img](https://ypyun-cdn.u1n1.com/img/picgo202204131635896.png)
 
 这就是[服务工作者](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)和密切相关的[Cache API的](https://developer.mozilla.org/en-US/docs/Web/API/Cache)用武之地。
 
