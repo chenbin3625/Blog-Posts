@@ -117,3 +117,39 @@
 ## Stream
 
 ![image-20220501114907341](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/0120220501114907.png)
+
+
+
+## http模块
+
+#### web服务器
+
+![image-20220501130133648](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501130133.png)
+
+初体验
+
+![image-20220501134726337](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501134726.png)
+
+
+
+### 创建服务器的方式
+
+![image-20220501132849315](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501132849.png)
+
+![image-20220501132932711](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501132932.png)
+
+![image-20220501135150169](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501135150.png)
+
+![image-20220501135431602](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501135431.png)
+
+![image-20220501135659023](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501135659.png)
+
+
+
+## 认识web框架
+
+## express
+
+ ![image-20220501151527791](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501151528.png)
+
+![image-20220501151909052](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/01/20220501151909.png)
