@@ -32,3 +32,57 @@
 
 #### 绑定class-对象语法
 
+![image-20220513095110661](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513095110.png)![image-20220513095315597](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513095315.png)
+
+#### 绑定class-数组语法
+
+![image-20220513095325393](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513095325.png)
+
+### v-on
+
+#### 基本使用
+
+![image-20220513101312278](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513101312.png)
+
+![image-20220513101352451](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513101352.png)
+
+#### 参数传递
+
+![image-20220513101857416](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513101857.png)
+
+#### 修饰符
+
+![image-20220513102522950](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513102522.png)
+
+## 条件渲染
+
+![image-20220513103042126](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513103042.png)
+
+![image-20220513103800645](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513103800.png)
+
+## 列表渲染
+
+![image-20220513122052035](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513122052.png)
+
+![image-20220513141525603](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513141525.png)
+
+![image-20220513142304144](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513142304.png)
+
+![image-20220513142441420](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513142441.png)
+
+## VNODE
+
+![image-20220513143320552](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513143320.png)
+
+![image-20220513144018156](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513144018.png)
+
+![image-20220513144024381](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513144024.png)
+
+![image-20220513145237473](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513145237.png)
+
+![image-20220513145244781](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513145244.png)
+
+![image-20220513145250650](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513145250.png)
+
+![image-20220513145257246](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513145257.png)
+
