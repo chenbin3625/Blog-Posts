@@ -103,3 +103,10 @@
 ![image-20220513220533649](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/13/20220513220533.png)
 
    
+
+## V-model
+
+![image-20220516214754651](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/16/214754.png)
+
+![image-20220516214821056](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/16/214821.png)
+
