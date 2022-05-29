@@ -126,4 +126,11 @@
 
 ![image-20220517163736787](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/17/163736.png)
 
-# 组件化开发
+
+
+# VueCLI和Vite
+
+## vueCLI安装和使用
+
+![image-20220529120941175](https://ypyun-cdn.u1n1.com/img/picgo/2022/05/29/20220529120941.png)
+
