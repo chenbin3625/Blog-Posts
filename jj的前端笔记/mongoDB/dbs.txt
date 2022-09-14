@@ -1,4 +1,0 @@
-
-admin : admin：123456
-itying : ityingAdmin : 123456
-myblog:myblogAdmin:xiaobailu123
