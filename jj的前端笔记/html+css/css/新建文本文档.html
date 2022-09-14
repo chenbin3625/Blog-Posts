@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 50px;
+            width: 900px;
+            border: 1px red solid;
+            /* 
+                text-align文本的水平对齐
+                    可选值：
+                        left
+                        right
+                        center
+                        justify（两端对齐）
+             */
+             text-align: center;
+        }
+        span{
+            font-size: 20px;
+            border: 1px blue solid;
+
+            /* 
+                vertical-align设置元素垂直对齐的方式
+                    可选值
+                    baseline 默认值，基线对齐
+                    top middle bottom
+             */
+             vertical-align: bottom;
+        }
+        p{
+            border: 1px red solid;
+            /* 
+                默认基线对齐，图片底部有一部分是空出来的
+                可以设置图片的vertical-align:top或者bottom来消除这个空出来的部分
+             */
+        }
+        img{
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        AAAAAAAAAAAAAAAAAAAA
+        <span>
+            真不错
+        </span>
+	    <span>
+            真不错
+        </span>
+    </div>
+
+
+    <p>
+        <img src="../source/hdImg_ab7962e7fbb9b61fe82e91bb2c2bd6ca16163112352.jpg" style="width: 200px;height: 200px;"alt="">
+    </p>
+</body>
+</html>
